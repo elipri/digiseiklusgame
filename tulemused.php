@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,39 +54,19 @@
           </div>
           <div class="square s3"><span id="third">*</span></div>
         </div>
-        <div class="resultlist">
-          <div class="results">
-            <p>nimi1</p>
-            <hr>
-            <p>12345</p>
-          </div>
-          <div class="results">
-            <p>nimi2</p>
-            <hr>
-            <p>12345</p>
-          </div>
-          <div class="results">
-            <p>nimi3</p>
-            <hr>
-            <p>12345</p>
-          </div>
-          <div class="results">
-            <p>nimi</p>
-            <hr>
-            <p>12345</p>
-          </div>
-          <div class="results">
-            <p>nimi</p>
-            <hr>
-            <p>12345</p>
-          </div>
-          <div class="results">
-            <p>nimi</p>
-            <hr>
-            <p>12345</p>
-          </div>
+        <div class="resultlist" id="responsecontainer">
+          
+         
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        setInterval(() => {
+          $('#responsecontainer').load("https://digiseiklus.digikapp.ee/tulemused3.php");
+        }, 1000);
+      });   
+    </script>
   </body>
 </html>
 

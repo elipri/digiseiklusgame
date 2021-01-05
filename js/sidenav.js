@@ -134,10 +134,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
   
   
-
+  let rand = Math.round(Math.random() * 10000);
+  
   //Disable 'Tulemused' button, when code hasn't been created
   let rbtn = document.getElementById("resultbtn"); //'tulemused'
   let cbtn = document.getElementById("createbtn"); //'loo kood'
+  let genCode = document.getElementById("genCode"); //'loo kood'
+  
   if(rbtn && cbtn) {
     let tooltip = tippy (rbtn);
     tooltip.setProps({trigger: 'click'});
@@ -152,8 +155,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     cbtn.addEventListener('click', ()=>{
       //Code should be generated here and written as part of cbtn inner HTML:
-      let code = 12345;
-      cbtn.innerHTML = '<input type="text" value="'+code+'" id="code">';
+      let code = rand;
+      genCode.innerHTML = code;
       let copyCode = document.getElementById('code');
       let tooltip2 = tippy(cbtn);
       copyCode.select();
