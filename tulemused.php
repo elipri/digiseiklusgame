@@ -20,7 +20,7 @@
             <div id="help">
                 <h2>Info</h2>
                 <p>
-                    The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
+                Tere tulemast Digiseikluse mängurakenduse tulemuste lehele!</p><p> Siin lehel on järjestatud paremusjärjestusena mängutulemused. Samuti on võimalik tulemusi PDF formaadis alla laadida või tulemuste lehte printida.
                 </p>
             </div>         
         </div>

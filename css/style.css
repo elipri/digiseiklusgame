@@ -416,6 +416,8 @@ button.student:hover {
 
 .questions {
   width: 45em;
+  height: 18em;
+  overflow: auto;
   /* background: #e4fbfb; */
   background: rgb(228,251,251, .8);
   padding: 2em;

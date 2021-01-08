@@ -20,7 +20,14 @@
             <div id="help">
                 <h2>Info</h2>
                 <p>
-                    The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
+                Tere tulemast Digiseikluse mängurakenduse avalehele! 
+                </p>
+                <p>Kui oled õpetaja, vajuta nupule “Õpetaja” ning Sind suunatakse edasi õpetaja lehele sisselogimise lehele. 
+                Õpetaja leht võimaldab genereerida mängu alustamiseks vajaliku koodi.</p>
+                <p>
+                Kui oled õpilane, vajuta nupule “Õpilane” ning Sind suunatakse edasi õpilase lehele, kus on võimalik sisestada õpetaja genereeritud kood, millega mängu alustada. 
+                Mängurakendus töötab Chrome ja Firefox veebilehitsejatega. Digiseiklus mängurakendus ei toimi mobiilil.
+
                 </p>
             </div>         
         </div>

@@ -25,7 +25,7 @@
             <div id="help">
                 <h2>Info</h2>
                 <p>
-                    The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
+                Tere tulemast Digiseikluse mängurakenduse õpetaja lehele!</p><p> Siin lehel kuvatakse Sulle mängus sees olevad küsimused, millele õpilased mängides vastama peavad. Mängu loomiseks genereeri kood vajutades nupule “Loo kood”. Iga kood on unikaalne. Tulemuste nägemiseks vajuta nupule “Tulemused”.
                 </p>
             </div>         
         </div>
@@ -47,14 +47,110 @@
 
       <div class="questions">
         <p>
-        The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
-      </p>
-      <p>
-        The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
-      </p>
-      <p>
-        The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
-      </p>
+        <span>1. Mängid koos sõpradega arvutis ja avaneb aken: “Kliki siia ja võida miljon eurot!”. Mida teed?</span>
+        <li>Klikin lingil, et täpsemalt uurida</li>
+        <li>Küsin sõpradelt, mida teha</li>
+        <li>Sulgen akna ja mängin sõpradega edasi (ÕIGE)</li>
+        </p>
+
+        <p>
+        <span>2. Kas veebis avaldatud pilti on võimalik kustutada?</span>
+        <li>Jah, alati.</li>
+        <li>Ei ole. (ÕIGE)</li>
+        <li>Pole teada.</li>
+        </p>
+
+        <p>
+        <span>3. Kas internetist leitud pilte võib sotsiaalmeedias vabalt avaldada?</span>
+        <li>Võib kui piltide omanik seda lubab (ÕIGE)</li>
+        <li>Ei või mitte kunagi.</li>
+        <li>Internetis võib kõike vabalt avaldada.</li>
+        </p>
+
+        <p>
+        <span>4. Kuidas reageerid kui sõber kirjutab sulle Messengeris: “Olen lollakas ja hüppan aknast alla.”?</span>
+        <li>Kirjutad vastuseks naeratavad emojid.</li>
+        <li>Helistad sõbrale ja uurid, kas see oli ikka tema ise kes kirjutas. (ÕIGE)</li>
+        <li>Ignoreerid teda.</li>
+        </p>
+
+        <p>
+        <span>5. Sõber tahab sinult sinu Facebooki konto parooli saada. Kas annad?</span>
+        <li>Kindlasti - ta ju hea sõber!</li>
+        <li>Üritad leida viisaka võimaluse keelduda (ÕIGE)</li>
+        <li>Annad sõbrale vale parooli.</li>
+        </p>
+
+        <p>
+        <span>6. Mis funktsioon on arvutis tulemüüril?</span>
+        <li>Ei lase võõraid internetist sinu arvutile ligi. (ÕIGE)</li>
+        <li>Kaitseb arvutit viiruste eest.</li>
+        <li>AJahutab arvutit.</li>
+        </p>
+
+        <p>
+        <span>7. Milline neist on turvaline salasõna?</span>
+        <li>MinuNimiOnKarl123</li>
+        <li>Password</li>
+        <li>5870wJK446 (ÕIGE)</li>
+        </p>
+
+        <p>
+        <span>8. Internetis enim levinud suhtlusportaal?</span>
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+        <li>Facebook (ÕIGE)</li>
+        </p>
+
+        <p>
+        <span>9. Portaal, kus inimesed saavad “säutsuda”?</span>
+        <li>Twitter (ÕIGE)</li>
+        <li>Facebook</li>
+        <li>Snapchat</li>
+        </p>
+
+        <p>
+        <span>10. Milline järgnevast on tark käitumine internetis?</span>
+        <li>Võõrale inimesele enda isikuandmete ja aadressi avaldamine</li>
+        <li>Isikuandmete mitteavaldamine (ÕIGE)</li>
+        <li>Suvalistele inimestele endast piltide saatmine.</li>
+        </p>
+
+        <p>
+        <span>11. Keda peaksid lisama sotsiaalvõrgustikes sõprade nimekirja?</span>
+        <li>Suvalised inimesed, keda otsingust leiad</li>
+        <li>Mingi tüübi, kellega mitu aastat tagasi ühel sünnipäeval korra rääkisid</li>
+        <li>Inimesi, keda päriselt tunned (ÕIGE)</li>
+        </p>
+
+        <p>
+        <span>12. Milliseid ekraanilukke on võimalik nutitelefonile peale panna?</span>
+        <li>Kood, muster, sõrmejälg (ÕIGE)</li>
+        <li>Sõrmejälg, lihtne avamine ühe nupu abil</li>
+        <li>Kood, muster, lihtne avamine ühe nupu abil</li>
+        </p>
+
+        <p>
+        <span>13. Milline neist on usaldusväärne pood rakenduste allalaadimiseks?</span>
+        <li>Aliexpress.com</li>
+        <li>Google Play (ÕIGE)</li>
+        <li>Ebay</li>
+        </p>
+
+        <p>
+        <span>14. Miks pole soovitatav kasutada paroolita WIFI võrke?</span>
+        <li>Need on liiga turvalised</li>
+        <li>Need tavaliselt ei tööta</li>
+        <li>Need ei ole sama turvalised kui parooliga võrgud (ÕIGE)</li>
+        </p>
+
+        <p>
+        <span>15. Milline neist tunnustest viitab küberkiusamisele?</span>
+        <li>Ähvardavad, õelad e-kirjad ja tekstisõnumid (ÕIGE)</li>
+        <li>Sõbralikult sotsiaalmeedias pildi kommenteerimine</li>
+        <li>Luba küsimine enne sinu pildi jagamist</li>
+        </p>
+      
       </div>
 	  
 		<?php
