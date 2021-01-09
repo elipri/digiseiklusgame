@@ -54,7 +54,8 @@
   if(empty($eesnimiError) and empty($perenimiError) and empty($emailError) and empty($paroolError) and empty($confirmpasswordError)){
 	  $notice = signup($eesnimi, $perenimi, $email, $_POST["parool"]);
   }
-  
+  header('Location: https://digiseiklus.digikapp.ee/ver1/login.php');
+  exit;
   }//kui on nuppu vajutatud - lõppeb
 ?>
 
