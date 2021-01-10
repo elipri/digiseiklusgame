@@ -1,5 +1,5 @@
 <?php   
-  require('database.php');
+  require('config.php');
 
  //Create database connection
  $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
