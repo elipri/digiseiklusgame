@@ -22,13 +22,15 @@
                 <p>
                 Tere tulemast Digiseikluse mängurakenduse avalehele! 
                 </p>
-                <p>Kui oled õpetaja, vajuta nupule “Õpetaja” ning Sind suunatakse edasi õpetaja lehele sisselogimise lehele. 
+                <p>Kui oled õpetaja, vajuta nupule “Õpetaja” ning Sind suunatakse edasi õpetaja sisselogimise lehele. 
                 Õpetaja leht võimaldab genereerida mängu alustamiseks vajaliku koodi.</p>
                 <p>
                 Kui oled õpilane, vajuta nupule “Õpilane” ning Sind suunatakse edasi õpilase lehele, kus on võimalik sisestada õpetaja genereeritud kood, millega mängu alustada. 
-                Mängurakendus töötab Chrome ja Firefox veebilehitsejatega. Digiseiklus mängurakendus ei toimi mobiilil.
-
+                Mängurakendus töötab kõige paremini Chrome ja Firefox veebilehitsejatega. Digiseiklus mängurakendus ei toimi hetkel veel mobiilil.
                 </p>
+                <p>
+                Rakenduse on loonud Tallinna Ülikooli Haapsalu Kolledži üliõpilased: Renata Lukk, Kerttu Rakke, Tõnu Toots, Elina Prints</p></br>
+                <img src="img/HK-est.svg" width="160px" height="auto">
             </div>         
         </div>
     </div>
