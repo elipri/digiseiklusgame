@@ -47,8 +47,10 @@ body {
 
 #scene img {
   object-fit: cover !important;
-  height: auto;
-  width: 1240px;
+  /* height: auto; */
+  /*width: 1240px;*/
+  min-height: 100vh;
+  width: auto;
 }
 
 .dot {
@@ -554,12 +556,14 @@ button.student:hover {
 
 @media (min-width: 1240px) {
   #scene img {
-    width: 1600px;
+    /*1600*/
+    /*width: 1600px;*/
   }
   .dot, .dot1, .dot2, .dot3, .dot4 {
     transform: translate(60px, 130px);
   }
 }
+
 
 @media print { 
   nav, img { 

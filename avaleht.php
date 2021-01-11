@@ -34,9 +34,9 @@
     </div>
     <div id="scene">
       <div data-depth="0.3" > 
-        <img src="img/Taust.png" width="100%" height="auto">
+        <img src="img/Taust.png">
       </div>
-      <div data-depth="0.3">
+      <!-- <div data-depth="0.3">
         <span class="dot dot1"></span>
       </div>
       <div data-depth="0.3">
@@ -47,7 +47,7 @@
       </div>
       <div data-depth="0.3">
         <span class="dot dot4"></span>
-      </div>
+      </div> -->
     </div>
     <div class="wrap">
         <nav>
