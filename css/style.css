@@ -567,7 +567,7 @@ button.student:hover {
 
 
 @media print { 
-  nav, img { 
+  nav, img, .squares { 
      visibility: hidden; 
   } 
   
