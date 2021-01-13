@@ -35,6 +35,7 @@ body {
   /* background-image: url("../img/Taust.png");
   background-size: cover;
   background-attachment: fixed; */
+  /*test*/
 }
 
 /* Background */
@@ -49,7 +50,8 @@ body {
   object-fit: cover !important;
   /* height: auto; */
   /*width: 1240px;*/
-  min-height: 100vh;
+  min-height: 105vh;
+  min-width: 105vh;
   width: auto;
 }
 

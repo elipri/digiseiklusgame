@@ -29,7 +29,7 @@
                 Mängurakendus töötab kõige paremini Chrome ja Firefox veebilehitsejatega. Digiseiklus mängurakendus ei toimi hetkel veel mobiilil.
                 </p>
                 <p>
-                Rakenduse on loonud Tallinna Ülikooli Haapsalu Kolledži üliõpilased: Renata Lukk, Kerttu Rakke, Tõnu Toots, Elina Prints</p></br>
+                Veebirakenduse on loonud Tallinna Ülikooli Haapsalu kolledži üliõpilased: Renata Lukk, Kerttu Sepp, Tõnu Toots, Elina Prints</p></br>
                 <img src="img/HK-est.svg" width="160px" height="auto">
             </div>         
         </div>

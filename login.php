@@ -44,7 +44,7 @@
             <div id="help">
                 <h2>Info</h2>
                 <p>
-                    The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well.
+                Oled jõudnud õpetaja sisselogimise lehele. Siin saad oma e-posti aadressi ja parooli abiga õpetajate lehele sisse logida. Kui sul ei ole veel kasutajat, siis loo kasutaja vajutades nupule “Loo kasutaja”.
                 </p>
             </div>        
         </div>
@@ -74,7 +74,7 @@
                     <label for="password">Salasõna:</label><br />
                     <input type="password" id="password" name="password" type="password"><span><?php echo $paroolError; ?></span> <br />
                     <input type="submit" formaction="rega.php" id="create" value="Loo kasutaja" class="create" /> 
-                    <input type="submit" formaction="" id="create" value="Parool ununes?" class="create" />
+                    <!-- <input type="submit" formaction="" id="create" value="Parool ununes?" class="create" /> -->
                     <input type="submit" name="login" value="Sisene" />
                    
                   </form> 
