@@ -1,5 +1,21 @@
 <?php 
+   require("functions_main.php");
+	
+   //kui pole sisseloginud
+   if(!isset($_SESSION["userid"])){
+     header("Location: avaleht.php");
+     exit();
+   }
    
+   //väljalogimine
+   if(isset($_GET["logout"])){
+     session_destroy();
+     header("Location: avaleht.php");
+     exit();
+   }
+   
+   //var_dump($_SESSION);
+
    $randomNum = substr(str_shuffle("123456789"), 0, 4);
   
 ?> 
@@ -37,6 +53,7 @@
     </div>
     <div class="wrap">
         <nav>
+            <a href="?logout=1"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
             <!-- <a href="avaleht.html" id="close" class="closebtn"><i class="fas fa-times-circle"></i></a> -->
             <a href="#" id="h"><i class="fas fa-question-circle"></i></a>
         </nav>
@@ -152,7 +169,7 @@
         </p>
       
       </div>
-	  
+	  <div id="codedisplay">
 		<?php
 
 			if(isset($_POST['lookood'])) { 
@@ -165,13 +182,15 @@
 
 			} 
 		?> 
-	  
-  <form action="" method="post"> 
-        <input type="submit" name="lookood"
+    </div>
+	<div id="userbuttons">  
+    <form action="" method="post"> 
+        <input id="gamecode" type="submit" name="lookood"
                 value="Loo kood"/>    
         
-	</form> 
-  <a href="tulemused.php" target="_blank" id="resultbtn"><button>Tulemused</button></a> 
+	  </form> 
+    <a href="tulemused.php" target="_blank"><button id="resultbtn">Tulemused</button></a> 
+  </div>
       </div>
     </div>
   </body>
