@@ -68,16 +68,19 @@
         </div> -->
         <div id="user">
             <h2>Õpetajale</h2>
-                <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <form method="POST" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label for="email">E-posti aadress:</label><br />
                     <input type="text" id="email" name="email" value="<?php echo $email; ?>"><span><?php echo $emailError; ?></span><br />
                     <label for="password">Salasõna:</label><br />
                     <input type="password" id="password" name="password" type="password"><span><?php echo $paroolError; ?></span> <br />
-                    <input type="submit" formaction="rega.php" id="create" value="Loo kasutaja" class="create" /> 
+                    <input type="rega" formaction="rega.php" id="create" value="Loo kasutaja" class="create" /> 
                     <!-- <input type="submit" formaction="" id="create" value="Parool ununes?" class="create" /> -->
-                    <input type="submit" name="login" value="Sisene" />
-                   
-                  </form> 
+                    <input type="submit" id="login" name="login" value="Sisene" />
+					
+                 
+                </form>
+
+				  
         </div> 
         
       </div>
