@@ -58,10 +58,10 @@
             <a href="#" id="h"><i class="fas fa-question-circle"></i></a>
         </nav>
       <h2>Mängu loomine</h2>
-      <!-- <div>
-          <h4>Küsimused:</h4>
-      </div> -->
-
+      <div>
+          <h4>Mängus on suvalises järjekorras järgnevad küsimused:</h4>
+      </div>
+      
       <div class="questions">
         <p>
         <span>1. Mängid koos sõpradega arvutis ja avaneb aken: “Kliki siia ja võida miljon eurot!”. Mida teed?</span>

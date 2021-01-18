@@ -58,7 +58,7 @@
             <a href="#" id="h"><i class="fas fa-question-circle"></i></a>
         </nav>
       <h1>Digiseiklus</h1>
-        <div>
+        <div class="homebtns">
           <a href="login.php"><button>Õpetaja</button></a>
           <span class="chippy"></span>
           <a href="/ver1/mäng"><button class="student" id="student">Õpilane</button></a>
