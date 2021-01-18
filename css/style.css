@@ -433,6 +433,11 @@ button.student:hover {
   -moz-box-shadow:    inset 0 0 10px #ccc;
    -webkit-box-shadow: inset 0 0 10px #ccc;
    box-shadow:         inset 0 0 10px #ccc;
+   font-weight: 300;
+}
+
+h4 {
+  font-weight: 300;
 }
 
 .tbuttons {
