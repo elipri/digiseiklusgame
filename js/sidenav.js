@@ -47,12 +47,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let d = document.getElementById("d");
   if(d) {
     d.addEventListener("click", ()=> {
-      //console.log('clicks on download');
-      const doc = new jsPDF();
-      const source = window.document.getElementsByClassName("resultlist")[0];
-      doc.fromHTML(source);
-      // Save the PDF
-      doc.save('pdf/test.pdf');
+
+      console.log('clicks on download');
+      let pdf = new jsPDF();
+      /* const moonhouse = "";
+      fetch('moonhouse.txt').then(response => response.text()).then(text => moonhouse = text);
+      pdf.addFileToVFS("Moonhouse.ttf", moonhouse);
+      pdf.addFont("Moonhouse.ttf", "Moonhouse", "normal");
+      pdf.setFont("Moonhouse"); */
+      pdf.setFont("helvetica");
+      pdf.setFontType("normal");
+      pdf.setTextColor(104, 29, 129);
+      pdf.text(20, 40, 'MÄNGU "DIGISEIKLUS" TULEMUSED');
+      let source= document.getElementsByClassName('results');
+      for (let i= 0; i < source.length; i++) {
+          pdf.setFont("helvetica");
+          pdf.setFontType("normal");
+          pdf.setTextColor(150,0,0);
+          let len = source[i].getElementsByTagName('P')[0].innerHTML.length;
+          let len2 = source[i].getElementsByTagName('P')[1].innerHTML.length;
+          pdf.fromHTML((i+1)+'. '+source[i].getElementsByTagName('P')[0].innerHTML+', '+source[i].getElementsByTagName('P')[1].innerHTML, 20, 60+i*15);
+      }
+      pdf.save('tulemused.pdf');
+
     });
   }
 

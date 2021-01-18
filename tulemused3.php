@@ -13,11 +13,11 @@
   if($result->num_rows > 0 ){
     
     while($rows=$result->fetch_assoc()){
-      echo "<div class='results'>";
+      echo "<li class='results'>";
       echo "<p>" .$rows['username'] . "</p>";
       echo "<hr>";
       echo "<p>" . $rows['score'] ."</p>";
-      echo "</div>";
+      echo "</li>";
     }
     
   } 

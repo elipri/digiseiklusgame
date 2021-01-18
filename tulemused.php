@@ -1,5 +1,4 @@
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -54,8 +53,11 @@
           </div>
           <div class="square s3"><span id="third">*</span></div>
         </div>
-        <div class="resultlist" id="responsecontainer">
+        <div class="resultlist">
+         
+        <ol class="numlist" id="responsecontainer">
           
+        </ol>
          
         </div>
     </div>

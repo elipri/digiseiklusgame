@@ -514,7 +514,7 @@ button.student:hover {
 }
 
 .results {
-  width: 45em;
+  /*width: 45em;*/
   color: #a09b9b;
   margin-top: .3em;
 }
@@ -542,6 +542,12 @@ button.student:hover {
   width: 15%;
 }
 
+.numlist {
+  width: 45em;
+  padding: 0;
+  padding-left: 1.2em;
+  margin: 0;
+}
 
 
 /* Media queries */
@@ -570,9 +576,12 @@ button.student:hover {
 
 
 @media print { 
-  nav, img, .squares { 
+  nav, img { 
      visibility: hidden; 
   } 
+  .squares {
+    display: none;
+  }
   
 }
 
