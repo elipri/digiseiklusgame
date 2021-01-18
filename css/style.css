@@ -486,9 +486,12 @@ h4 {
 /*end*/
 
 #codedisplay {
-  font-family: 'Montserrat', sans-serif;
   min-height: 5em;
   max-height: 5em;
+}
+
+#codedisplay h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Results */
