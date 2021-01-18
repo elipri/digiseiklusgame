@@ -1,5 +1,4 @@
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +8,8 @@
     <link id='-gd-engine-icon' rel='icon' type='image/png' href='favicon.png' />
     <script src="https://kit.fontawesome.com/b8b3d71ce8.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
     <script src="js/sidenav.js"></script>
     <title>Tulemused</title>
   </head>
@@ -54,8 +54,11 @@
           </div>
           <div class="square s3"><span id="third">*</span></div>
         </div>
-        <div class="resultlist" id="responsecontainer">
+        <div class="resultlist">
+         
+        <ol class="numlist" id="responsecontainer">
           
+        </ol>
          
         </div>
     </div>
