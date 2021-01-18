@@ -455,6 +455,10 @@ button.student:hover {
   margin: 1em;
 }
 
+#codedisplay {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Results */
 
 .resultlist {
