@@ -573,6 +573,22 @@ h4 {
   }
 }
 
+@media (max-width: 580px) {
+  .homebtns {
+    text-align: center;
+  }
+  h1 {
+    font-size: 38pt;
+  }
+}
+
+@media (max-width: 630px) {
+  .squares, .numlist, .questions {
+    max-width: 80vw;
+  }
+   
+}
+
 @media (min-width: 1240px) {
   #scene img {
     /*1600*/
