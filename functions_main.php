@@ -1,6 +1,6 @@
 <?php
 	require("config.php");
-	$database = "tonutoots";
+	$database = "kerttusepp";
 	
 	//võtan kasutusele sessiooni
 	session_start();
@@ -14,9 +14,9 @@
 	
 	function signup($eesnimi, $perenimi, $email, $parool){
 		$notice = "";
-		$conn = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUserName"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
+		$conn = new mysqli($GLOBALS["dbhost"], $GLOBALS["dbuser"], $GLOBALS["dbpass"], $GLOBALS["database"]);
 		//kõigepealt kontrollime, ega pole sellist kasutajat olemas
-		$stmt = $conn->prepare("SELECT id FROM kasutajad WHERE email=?");
+		$stmt = $conn->prepare("SELECT id FROM Users WHERE email=?");
 		echo $conn->error;
 		$stmt->bind_param("s", $email);
 		$stmt->bind_result($idFromDb);
@@ -25,7 +25,7 @@
 			$notice = "Kahjuks on sellise kasutajanimega (" .$email .") kasutaja juba olemas!";
 		} else {
 			$stmt->close();
-			$stmt = $conn->prepare("INSERT INTO kasutajad (eesnimi, perenimi, email, parool) VALUES(?,?,?,?)");
+			$stmt = $conn->prepare("INSERT INTO Users (firstname, lastname, email, password) VALUES(?,?,?,?)");
 			echo $conn->error;
 			
 			$options = ["cost" => 12, "salt" => substr(sha1(rand()), 0, 22)];
@@ -47,8 +47,8 @@
 	
 	function signin($email, $parool){
 		$notice = "";
-		$conn = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUserName"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
-		$stmt = $conn->prepare("SELECT id, eesnimi, perenimi, parool FROM kasutajad WHERE email=?");
+		$conn = new mysqli($GLOBALS["dbhost"], $GLOBALS["dbuser"], $GLOBALS["dbpass"], $GLOBALS["database"]);
+		$stmt = $conn->prepare("SELECT id, firstname, lastname, password FROM Users WHERE email=?");
 		echo $conn->error;
 		$stmt->bind_param("s", $email);
 		$stmt->bind_result($idFromDb, $eesnimiFromDb, $perenimiFromDb, $paroolFromDb);
