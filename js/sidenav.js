@@ -64,9 +64,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           pdf.setFont("helvetica");
           pdf.setFontType("normal");
           pdf.setTextColor(150,0,0);
-          let len = source[i].getElementsByTagName('P')[0].innerHTML.length;
-          let len2 = source[i].getElementsByTagName('P')[1].innerHTML.length;
-          pdf.fromHTML((i+1)+'. '+source[i].getElementsByTagName('P')[0].innerHTML+', '+source[i].getElementsByTagName('P')[1].innerHTML, 20, 60+i*15);
+          let name = source[i].getElementsByTagName('P')[0].innerHTML.trim();
+          pdf.fromHTML((i+1)+'. '+name+', '+source[i].getElementsByTagName('P')[1].innerHTML, 20, 60+i*15);
       }
       pdf.save('tulemused.pdf');
 
