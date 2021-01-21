@@ -28,11 +28,12 @@
 			$stmt = $conn->prepare("INSERT INTO Users (firstname, lastname, email, password) VALUES(?,?,?,?)");
 			echo $conn->error;
 			
-			$pwdhash = password_hash($parool, PASSWORD_BCRYPT); 
+			$options = ["cost" => 12, "salt" => substr(sha1(rand()), 0, 22)];
+			$pwdhash = password_hash($parool, PASSWORD_BCRYPT, $options);
 			
 			$stmt->bind_param("ssss", $eesnimi, $perenimi, $email, $pwdhash);
 			if($stmt->execute()){
-				$notice = "OK!" and header('Location: login.php');
+				$notice = "OK!";
 			} else {
 				$notice = "Error: " .$stmt->error;
 			}
@@ -63,7 +64,7 @@
 					$conn->close();
 					
 					header("Location: kasutaja.php");
-					//exit();
+					exit();
 					
 				} else {
 					$notice = "Vale salasõna!";
