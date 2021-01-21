@@ -13,7 +13,7 @@
 			border: 0 none;
 			padding: 0;
 			text-align: center;
-			background-image: url("../img/Taust.png");
+			background-image: url("Taust.png");
 			background-repeat: no-repeat;
 			background-size: cover;
 		
@@ -59,7 +59,7 @@
 		#status-progress {
 			width: 366px;
 			height: 7px;
-			background-color: #ca91cf;
+			background-color: #332f33;
 			border: 1px solid #1a1a1b;
 			padding: 1px;
 			box-shadow: 0 0 2px 1px lightseagreen;
@@ -78,8 +78,8 @@
 			width: 0;
 			box-sizing: border-box;
 			transition: width 0.5s linear;
-			background-color: lightseagreen;
-			border: 1px solid lightskyblue;
+			background-color: #0f0f0f;
+			border: 1px solid #15171b;
 			box-shadow: 0 0 1px 1px #27282E;
 			border-radius: 3px;
 		}
@@ -249,9 +249,8 @@
 							setStatusMode('indeterminate');
 						}, 500);
 					}
-				 	else {
+				} else {
 					setStatusMode('indeterminate');
-					}
 				}
 			});
 
@@ -273,7 +272,7 @@
 					setStatusMode('hidden');
 					initializing = false;
 				}, displayFailureNotice);
-				//engine.setUnloadAfterInit;
+				engine.setUnloadAfterInit;
 			}
 		})();
 	//]]></script>

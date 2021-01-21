@@ -47,11 +47,8 @@ body {
 
 #scene img {
   object-fit: cover !important;
-  /* height: auto; */
-  /*width: 1240px;*/
-  min-height: 105vh;
-  min-width: 105vw;
-  width: auto;
+  height: auto;
+  width: 1240px;
 }
 
 .dot {
@@ -182,7 +179,6 @@ i.fas, i.fa {
 
 /* Elements */
 
-i.fa:hover,
 i.fas:hover,
 h1,
 h2 {
@@ -229,7 +225,7 @@ form input {
   -moz-box-sizing: border-box;
 }
 
-form input[type="text"], form input[type="password"], #code {
+form input[type="text"] {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
@@ -241,11 +237,11 @@ form input[type="text"], form input[type="password"], #code {
   background-color: #fafafa;
 }
 
-form input[type="text"]:hover, form input[type="password"]:hover, #code:hover {
+form input[type="text"]:hover {
   box-shadow: inset 0px 0px 1em #ccc;
 }
 
-form input[type="text"]:focus, form input[type="password"]:focus, #code:focus {
+form input[type="text"]:focus {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
@@ -263,7 +259,7 @@ input:focus {
   color: #808080!important;
 }
 
-form input[type="submit"],form input[type="rega"] {
+form input[type="submit"] {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   border-radius: 0.3em;
@@ -310,7 +306,7 @@ input#create:hover {
   padding: 3em;
   padding-bottom: 5em;
   margin-bottom: 5em;
-  max-width: 22em;
+  max-width: 25em;
 }
 
 #user h2 {
@@ -319,24 +315,16 @@ input#create:hover {
 
 #user a {
   color: darkorchid;
-  display: inherit;
-  text-align: center;
+  padding: 0 30% 0 30%;
 }
 
 #user > form input[type="submit"],
-#user > form input[type="rega"],
-#user > form input[type="text"],
-#user > form input[type="password"] {
+#user > form input[type="text"] {
   width: 100%;
 }
 
 form input[type="submit"]:hover {
   box-shadow: 0px 0px 1em #ccc;
-}
-
-
-.redborder {
-  border: 1px solid deeppink!important;
 }
 
 /* Buttons */
@@ -396,102 +384,14 @@ button.student:hover {
   animation: chippy;
 }
 
-
-/* Tippy themes */
-
-.tippy-box[data-theme~='chippy'] {
-  background-color: rgba(255, 99, 71, 0);
-  color: #ffffff;
-  height: 3.7em;
-}
-.tippy-box[data-theme~='chippy'][data-placement^='top'] > .tippy-arrow::before {
-  border-top-color: rgba(255, 99, 71, 0);
-}
-.tippy-box[data-theme~='chippy'][data-placement^='bottom'] > .tippy-arrow::before {
-  border-bottom-color: rgba(255, 99, 71, 0);
-}
-.tippy-box[data-theme~='chippy'][data-placement^='left'] > .tippy-arrow::before {
-  border-left-color: rgba(255, 99, 71, 0);
-}
-.tippy-box[data-theme~='chippy'][data-placement^='right'] > .tippy-arrow::before {
-  border-right-color: rgba(255, 99, 71, 0);
-}
-
-
 /* Questions */
 
 .questions {
   width: 45em;
-  height: 18em;
-  overflow: auto;
-  /* background: #e4fbfb; */
-  background: rgb(228,251,251, .8);
+  background: #e4fbfb;
   padding: 2em;
-  margin-bottom: 1em;
-  /* border: 0.1em solid #555; */
-  border-radius: 10px;
-  -moz-box-shadow:    inset 0 0 10px #ccc;
-   -webkit-box-shadow: inset 0 0 10px #ccc;
-   box-shadow:         inset 0 0 10px #ccc;
-   font-weight: 300;
-}
-
-h4 {
-  font-weight: 300;
-}
-
-.tbuttons {
-  margin-bottom: 5em;
-  display: flex;
-  align-items: center;
-}
-
-.tbuttons a:first-of-type button{
-  background: rgb(28, 152, 150);
-  background: linear-gradient(
-    0deg,
-    rgba(28, 152, 150, 1) 24%,
-    rgba(38, 222, 220, 1) 66%,
-    rgba(44, 251, 249, 1) 100%
-  );
-}
-
-#code {
-  margin: 1em;
-}
-
-/*18012021*/
-#userbuttons {
-  display: flex;
-  margin-bottom: 4em;
-}
-
- #gamecode {
-  padding: 0;
-  margin: 0 .5em;
-  background: rgb(28, 152, 150);
-  background: linear-gradient(
-    0deg,
-    rgba(28, 152, 150, 1) 24%,
-    rgba(38, 222, 220, 1) 66%,
-    rgba(44, 251, 249, 1) 100%
-  );
-}
-
- #resultbtn {
-  padding: 0;
-  margin: 0 .5em;
-}
-
-/*end*/
-
-#codedisplay {
-  min-height: 5em;
-  max-height: 5em;
-}
-
-#codedisplay h2 {
-  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2em;
+  border: 0.1em solid #555;
 }
 
 /* Results */
@@ -553,7 +453,7 @@ h4 {
 }
 
 .results {
-  /*width: 45em;*/
+  width: 45em;
   color: #a09b9b;
   margin-top: .3em;
 }
@@ -581,12 +481,6 @@ h4 {
   width: 15%;
 }
 
-.numlist {
-  width: 45em;
-  padding: 0;
-  padding-left: 1.2em;
-  margin: 0;
-}
 
 
 /* Media queries */
@@ -603,40 +497,19 @@ h4 {
   }
 }
 
-@media (max-width: 580px) {
-  .homebtns {
-    text-align: center;
-  }
-  h1 {
-    font-size: 38pt;
-  }
-}
-
-@media (max-width: 630px) {
-  .squares, .numlist, .questions {
-    max-width: 80vw;
-  }
-   
-}
-
 @media (min-width: 1240px) {
   #scene img {
-    /*1600*/
-    /*width: 1600px;*/
+    width: 1600px;
   }
   .dot, .dot1, .dot2, .dot3, .dot4 {
     transform: translate(60px, 130px);
   }
 }
 
-
 @media print { 
   nav, img { 
      visibility: hidden; 
   } 
-  .squares {
-    display: none;
-  }
   
 }
 

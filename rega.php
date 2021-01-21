@@ -52,13 +52,11 @@
   }
   
   if(empty($eesnimiError) and empty($perenimiError) and empty($emailError) and empty($paroolError) and empty($confirmpasswordError)){
-	  $notice = signup($eesnimi, $perenimi, $email, $_POST["parool"] );
+	  $notice = signup($eesnimi, $perenimi, $email, $_POST["parool"]);
   }
-
-    //header("Location: login.php"); and header('Location: login.php')
-    //exit;
+  header('Location: https://digiseiklus.digikapp.ee/ver1/login.php');
+  exit;
   }//kui on nuppu vajutatud - lõppeb
-
 ?>
 
 <!DOCTYPE html>
@@ -107,13 +105,13 @@
         </div> -->
         <div id="user">
             <h2>Kasutaja loomine</h2>
-            <form name="submitform" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <label for="fname">Eesnimi:</label><br />
-                <input required name="eesnimi" type="text" value="<?php echo $eesnimi; ?>"><span><?php echo $eesnimiError; ?></span><br>
+                <input name="eesnimi" type="text" value="<?php echo $eesnimi; ?>"><span><?php echo $eesnimiError; ?></span><br>
                 <label for="lname">Perekonnanimi:</label><br />
                 <input name="perenimi" type="text" value="<?php echo $perenimi; ?>"><span><?php echo $perenimiError; ?></span><br>
                 <label for="email">E-post (kasutajatunnus):</label><br />
-                <input type="text" name="email" required value="<?php echo $email; ?>"><span><?php echo $emailError; ?></span><br>
+                <input type="text" name="email" value="<?php echo $email; ?>"><span><?php echo $emailError; ?></span><br>
                 <label for="code">Salasõna (min 8 tähemärki):</label><br />
                 <input name="parool" type="password"><span><?php echo $paroolError; ?></span><br>
                 <label for="code">Korrake salasõna:</label><br />
