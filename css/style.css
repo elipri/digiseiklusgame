@@ -610,6 +610,15 @@ h4 {
   h1 {
     font-size: 38pt;
   }
+  h4 {
+    width: 80vw;
+  }
+  #userbuttons {
+    display: inline-block;
+  }
+  #gamecode {
+    margin-bottom: .5em;
+  }
 }
 
 @media (max-width: 630px) {
